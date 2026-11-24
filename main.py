@@ -1,6 +1,9 @@
 def addieren(a, b):
     return a + b
 
+def subtraktion(a, b):
+    return a - b
+
 def main():
     print("Taschenrechner")
     print("1 fuer Addition")
@@ -12,14 +15,13 @@ def main():
 
     match wahl:
         case "1":
-            print("Resultat: {}".format(addieren(2,3)))
-            # Hier Funktion für Addition einfügen
+            print("Resultat: {}".format(addieren(2, 3)))
         case "2":
-            # Hier Funktion für die Subtraktion einfügen
+            print("Resultat: {}".format(subtraktion(5, 3)))
         case "3":
-            # Hier die Funktion für die Multiplikation einfügen
+            pass
         case "4":
-            # Hier die Funktion für die Division einfügen
+            pass
         case _:
             print("Falsche Auswahl, das Programm wird beendet.")
 
